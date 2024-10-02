@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica</title>
+    <link rel="icon" href="/IMG/favicon.ico" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" th:href="@{/CSS/styles.css}" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="d-flex justify-content-between align-items-center p-3">
+        <h1>Odontología</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/Management">Management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="cargar('Registro','Tarjeta2')"
+                >Registrarse</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="cargar('login','Tarjeta')"
+                >Ingresar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <section
+      id="Tarjeta"
+      class="d-none align-items-center justify-content-center"
+    ></section>
+
+    <section
+      id="Tarjeta2"
+      class="d-none align-items-center justify-content-center"
+    ></section>
+    <script th:src="@{JS/scripts.js}"></script>
+  </body>
+</html>

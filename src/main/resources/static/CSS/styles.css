@@ -1,0 +1,20 @@
+#Tarjeta,
+#Tarjeta2 {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.207);
+  from {
+    width: 500px;
+  }
+}
+.d-none {
+  display: none;
+  background-color: red;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
